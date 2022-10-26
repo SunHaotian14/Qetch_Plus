@@ -1,15 +1,18 @@
 # Qetch_Plus
  CS8803MDS
  
-Qetch is a tool that allows users to freely sketch patterns on a scale-less canvas to query time series data without specifying query length or amplitude. 
+Time series data play a crucial role in many sectors, such as finance, healthcare, speech recognition, etc. Visualizing and eventually interacting with time series data enable users to perform concrete analytics and help them explore underlying features from various datasets. One of the most promising interactive approaches is matching patterns from the original time series based on users’ hand-drawn sketches. Qetch is a well-developped framework to achieve the "querying by sketching" functionality. To be more specific, Qetch recognizes time series patterns from massive datasets that share similar shapes with the time series sketches drawn by users’ hands. To obtain the optimal matching results, Qetch introduces three different distance metrics, i.e., 1) Qetch’s newly proposed distance, 2) dynamic time warping (DTW), and 3) Euclidean distance (ED).
 
 ![screenshot](https://github.com/dtl-nyuad/qetch/blob/resources/screenshot.png)
 
-We study how humans sketch time series patterns --- humans preserve visually salient perceptual features but often non-uniformly scale and locally distort a pattern --- and we develop a novel matching algorithm that accounts for human sketching errors. 
+The matching process can be regarded as the key to the overall performance of the sketch-querying systems. However, human sketches can sometimes involve high complexity and imperfection, posing even more challenges to these matching algorithms’ performance indices, such as matching accuracy, computation time, fault tolerance, etc. Existing pattern matching algorithms, such as DTW and ED, harness conventional distance metrics for time series data. These methods can suffer from performance degradation when dealing with massive and complex time series datasets. Therefore, it necessitates integrating the sketch querying system with appropriate matching approaches such that the desired patterns can be matched accurately and presented to users quickly. Besides, since the target dataset can sometimes be massive, there may exist multiple matched patterns that correspond to a single hand-drawn sketch. Thus, it is essential to compare the relations among different time series so that the querying system can provide exhaustive results for users.
+To overcome the challenges mentioned above in time-series data matching, we propose equipping the sketch-querying system with some state-of-the-art matching approaches that adopt novel distance metrics and are capable of identifying the relations among time-series data. We also compare the novel methods to the existing DTW and ED to explore the most suitable scenarios where the novel distance metrics come into play.
 
-Qetch enables the easy construction of complex and expressive queries with two key features: *regular expressions over sketches* and *relative positioning of sketches* to query multiple time-aligned series. 
+To validate the performance of the proposed method, we design several experiments to measure how well the querying system performs empowered by different distance metrics. To simulate the usage in different application scenarios, we also investigate the querying and matching performance on various time-series datasets, such as the 3W dataset and UC Riverside Time Series Dataset. Several evaluation metrics, such as precision, accuracy, recall, and F1 score, are reported and analyzed in different exper- imental cases. Some further discussions on related works are also presented.
 
-## Publications
+Overall, this project highlights the concrete progress that time-series data distance metrics and the following matching algorithms have moved forward in the past several years. This project shows that such technical advancement in time-series data can fulfill real- world applications such as sketch querying and time series relation comparison.
+
+## References
 
 **[Expressive Time Series Querying with Hand-Drawn Scale-Free Sketches](https://dl.acm.org/citation.cfm?id=3173962)**
 <br/>
@@ -18,10 +21,6 @@ Qetch enables the easy construction of complex and expressive queries with two k
 **[Qetch: Time Series Querying with Expressive Sketches](https://dl.acm.org/citation.cfm?id=3193547)**
 <br/>
 <span style="font-size:80%">Miro Mannino, Azza Abouzied - SIGMOD'18</span>
-
-## Awards
-
-We are pleased to announce that Qetch won the Best Paper Award during the SIGCHI'18 conference!
 
 ## Videos
 
@@ -42,7 +41,7 @@ This repository contains:
 
 - The collected queries from our crowd study are in the folder `Crowd-Study Data`
 
-## How to run Qetch
+## Installation
 
 The project's backend has been developed using NodeJS and a front-end which includes many technologies, such as: AngularJS, D3, Bootstrap, Paper.js, Math.js, etc. It requires a PostreSQL database in order to store and load time series.
 
