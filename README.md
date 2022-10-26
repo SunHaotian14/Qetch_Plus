@@ -3,10 +3,15 @@ CS8803-MDS Project
 
 ## Ongoing Tasks
 
-- [x] Install and run the original Qetch system
-- [ ] Integrate geometry-based similarity measures into Qetch
-> Note that the Qetch's backend is located at [./Server/public/js/app.js](Server/public/js/app.js)
-> and the DTW is implemented at ./Server/public/js/libs
+- [x] [Week 10] Install and run the original Qetch system 
+- [ ] [Week 10] Integrate geometry-based similarity measures into Qetch
+- [ ] [Week 11-12] Integrate learning-based similarity measures into Qetch (may need to call py scripts)
+- [ ] [Week 13] Test on more datasets
+- [ ] [Week 14] Harness different performance indices (accuracy / precision / recall / F1 / ...) to evaluate how different metrics perform under different datasets (may need to implement a fucntion to save querying results)
+- [ ] [Week 15] Report and presentation
+
+> Note that the Qetch's backend is located at [./Server/public/js/](Server/public/js/)
+> and the DTW is implemented at [./Server/public/js/libs](Server/public/js/libs)
 
 ## Project Description
 
