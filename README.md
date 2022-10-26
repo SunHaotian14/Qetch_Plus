@@ -1,4 +1,4 @@
-# Various Similarity Measurements on Sketch-Querying Frameworks
+# Performance Analysis on Sketch-Querying Frameworks with Various Similarity Measures
 CS8803-MDS Project
  
 Time series data play a crucial role in many sectors, such as finance, healthcare, speech recognition, etc. Visualizing and eventually interacting with time series data enable users to perform concrete analytics and help them explore underlying features from various datasets. One of the most promising interactive approaches is matching patterns from the original time series based on users’ hand-drawn sketches. Qetch is a well-developped framework to achieve the "querying by sketching" functionality. To be more specific, Qetch recognizes time series patterns from massive datasets that share similar shapes with the time series sketches drawn by users’ hands. To obtain the optimal matching results, Qetch introduces three different distance metrics, i.e., 1) Qetch’s newly proposed distance, 2) dynamic time warping (DTW), and 3) Euclidean distance (ED).
