@@ -3,9 +3,9 @@ CS8803-MDS Project
 
 ## Ongoing Tasks
 
-[x] Install and run the original Qetch system
-[ ] Integrate geometry-based similarity measures into Qetch
-> Note that the Qetch's backend is located at ./Server/public/js/app.js
+- [x] Install and run the original Qetch system
+- [ ] Integrate geometry-based similarity measures into Qetch
+> Note that the Qetch's backend is located at [./Server/public/js/app.js](Server/public/js/app.js)
 > and the DTW is implemented at ./Server/public/js/libs
 
 ## Project Description
