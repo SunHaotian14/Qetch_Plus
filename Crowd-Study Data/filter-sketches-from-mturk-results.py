@@ -45,3 +45,6 @@ for question in questions:
 	source = open('qst-' + question + '-raw.csv','r')
 	destination = open('qst-' + question + '.csv','w')
 	destination.writelines(filterSketch(source))
+
+#%%
+python3 filter-sketches-from-mturk-results.py csv-with-filter-results-from-mturk.csv 1
