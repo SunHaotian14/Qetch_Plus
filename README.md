@@ -1,9 +1,6 @@
 # Review and Evaluation of Similarity Measures for Query-by-sketch Pattern Matching in Time Series
 CS8803-MDS Project
 
-> Note that the Qetch's backend is located at [./Server/public/js/](Server/public/js/)
-> and the DTW is implemented at [./Server/public/js/libs](Server/public/js/libs)
-
 ## Project Description
 
 Query-by-sketching in time series is essential in many application scenarios. The most general approaches for this pattern-matching task usually define a specific time series distance measure and obtain the matching prediction based on that. Considerable distance measurement methods exist, making it challenging for practitioners to decide the most appropriate methods to utilize in practice. To address such issues, we propose concrete experimental evaluations in which the most commonly used matching approaches are examined under different scenarios. Several performance metrics, such as accuracy, precision, running time, and noise sensitivity, are depicted and further analyzed thoroughly. Finally, we summarize the best choices of the pattern-matching algorithms in different scenarios based on these experimental results.
