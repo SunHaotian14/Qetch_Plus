@@ -25,7 +25,7 @@ Query-by-sketching in time series is essential in many application scenarios. Th
 
 ## Code Locations
 
-- Jupyter Notebook for Data Preprocessing: [/Crowd-Study Data/Preprocessing.ipynb](./Crowd-Study Data/Preprocessing.ipynb)
+- Jupyter Notebook for Data Preprocessing: [Preprocessing.ipynb](Crowd-Study Data/Preprocessing.ipynb)
 - Jupyter Notebook for Evaluations: [/Crowd-Study Data/Preprocessing.ipynb](./Crowd-Study Data/Experiment.ipynb)
 
 ## Repository content
